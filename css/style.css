@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*#region Hem*/
+
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: 
+    "he he he"
+    "ar ar ar"
+    "f1 f4 f3"
+    "f1 f5 f3"
+    "f2 f2 f3"
+    ;
+    height: 100vh;
+    width: 100vw;
+}
+
+#hem_header {
+    display: flex;
+    grid-area: he;
+    background-color: lightblue;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hem_article {
+    grid-area: ar;
+    background: lightcoral;
+}
+
+#kvadrat_bild_1 {
+    grid-area: f1;
+    background-color: lightgoldenrodyellow ;
+}
+
+#kvadrat_bild_2 {
+    grid-area: f2;
+    background-color: lightgreen;
+}
+
+#kvadrat_bild_3 {
+    grid-area: f3;
+    background-color: lightgrey;
+}
+
+#kvadrat_bild_4 {
+    grid-area: f4;
+    background-color: lightpink;
+}
+
+#kvadrat_bild_5 {
+    grid-area: f5;
+    background-color: lightseagreen;
+}
+
+
+/*#endregion Hem*/
