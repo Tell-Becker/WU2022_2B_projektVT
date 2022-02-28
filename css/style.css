@@ -6,19 +6,77 @@
 
 /*#region Hem*/
 
+
 #grid_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
+    grid-template-rows: 20vh 80vh 33.33vh 33.3vh 33.33vh;
     grid-template-areas: 
     "he he he"
     "ar ar ar"
-    "f1 f4 f3"
+    "f1 f4 f4"
     "f1 f5 f3"
     "f2 f2 f3"
     ;
     height: 100vh;
     width: 100vw;
+}
+
+#meny_lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20vh;
+    background-color: lightblue;
+    position: absolute;
+    top: -20vh;
+    left: 0;
+    width: 80vw;
+    align-items: center;
+    transition: all 1s;
+}
+
+.meny {
+    transform: translateY(20vh);
+}
+
+#meny_lista li {
+    list-style: none;
+}
+
+#meny_lista a {
+    text-decoration: none;
+    letter-spacing: 0.1875rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+#hamburgare_meny div {
+    width: 25px;
+    height: 3px;
+    background-color: red;
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.5s;
+}
+
+.toggle #line2 {
+    opacity: 0;
+}
+
+.toggle #line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle #line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+#hamburgare_meny {
+    margin-right: 3.125rem;
+    cursor: pointer;
 }
 
 #hem_header {
@@ -59,5 +117,57 @@
     background-color: lightseagreen;
 }
 
-
 /*#endregion Hem*/
+
+
+
+/*#region Krukväxter*/
+
+#kruk_grid_wrapper {
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
+    grid-template-rows: 20vh 80vh 40vh 40vh 20vh;
+    grid-template-areas: 
+    "na na na"
+    "a1 a1 a1"
+    "a2 a2 a2"
+    "a3 a3 a3"
+    "fo fo fo"
+    ;
+    height: 100vh;
+    width: 100vw;
+}
+
+#kruk_nav {
+    grid-area: na;
+    background-color: lightcyan;
+}
+
+#kruk_article_1 {
+    grid-area: a1;
+    background-color: lightgrey;
+}
+
+#kruk_article_2 {
+    grid-area: a2;
+    background-color: lightskyblue;
+}
+
+#kruk_article_3 {
+    grid-area: a3;
+    background-color: lightyellow;
+}
+
+#kruk_footer {
+    grid-area: fo;
+    background-color: lightcoral;
+}
+
+
+
+
+
+
+
+
+/*#endregion Krukväxter*/
