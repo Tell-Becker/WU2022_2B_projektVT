@@ -139,8 +139,33 @@
 }
 
 #kruk_nav {
+    display: flex;
     grid-area: na;
     background-color: lightcyan;
+}
+
+#kruk_lista {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+#kruk_lista a {
+    text-decoration: none;
+    color: black;
+}
+
+#kruk_lista li {
+    list-style: none;
+    text-decoration: none;
 }
 
 #kruk_article_1 {
@@ -163,11 +188,143 @@
     background-color: lightcoral;
 }
 
-
-
-
-
-
-
-
 /*#endregion Krukväxter*/
+
+/*#region kaktus*/
+
+#kaktus_grid_wrapper {
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
+    grid-template-rows: 20vh 80vh 40vh 40vh 20vh;
+    grid-template-areas: 
+    "na na na"
+    "a1 a1 a1"
+    "a2 a2 a2"
+    "a3 a3 a3"
+    "fo fo fo"
+    ;
+    height: 100vh;
+    width: 100vw;
+}
+
+#kaktus_nav {
+    display: flex;
+    grid-area: na;
+    background-color: lightpink;
+}
+
+#kaktus_lista {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+#kaktus_lista a {
+    text-decoration: none;
+    color: black;
+}
+
+#kaktus_lista li {
+    list-style: none;
+    text-decoration: none;
+}
+
+#kaktus_article {
+    grid-area: a1;
+    background-color: lightgreen;
+}
+
+#kaktus_article_2 {
+    grid-area: a2;
+    background-color: lightyellow;
+}
+
+#kaktus_article_3 {
+    grid-area: a3;
+    background-color: lightcyan;
+}
+
+#kaktus_footer {
+    grid-area: fo;
+    background-color: lightseagreen;
+}
+
+/*#endregion kaktus*/
+
+/*#region svampar*/
+
+#svamp_grid_wrapper {
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
+    grid-template-rows: 20vh 80vh 40vh 40vh 20vh;
+    grid-template-areas: 
+    "na na na"
+    "a1 a1 a1"
+    "a2 a2 a2"
+    "a3 a3 a3"
+    "fo fo fo"
+    ;
+    height: 100vh;
+    width: 100vw;
+}
+
+#svamp_nav {
+    display: flex;
+    grid-area: na;
+    background-color: lightgray;
+}
+
+#svamp_lista {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+#svamp_lista a {
+    text-decoration: none;
+    color: black;
+}
+
+#svamp_lista li {
+    list-style: none;
+    text-decoration: none;
+}
+
+#svamp_article_1 {
+    grid-area: a1;
+    background-color: lightsteelblue;
+}
+
+#svamp_article_2 {
+    grid-area: a2;
+    background-color: lightpink;
+}
+
+#svamp_article_3 {
+    grid-area: a3;
+    background-color: lightcyan;
+}
+
+#svamp_footer {
+    grid-area: fo;
+    background-color: lightsalmon;
+}
+
+
+/*#endregion svampar*/
