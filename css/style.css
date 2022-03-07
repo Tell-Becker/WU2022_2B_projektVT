@@ -6,6 +6,9 @@
 
 /*#region Hem*/
 
+#hem_body {
+    overflow-x: hidden;
+}
 
 #grid_wrapper {
     display: grid;
@@ -53,10 +56,14 @@
     text-transform: uppercase;
 }
 
+#meny_lista li:hover a {
+    color: darkslategray;
+}
+
 #hamburgare_meny div {
-    width: 25px;
-    height: 3px;
-    background-color: red;
+    width: 30px;
+    height: 4px;
+    background-color: black;
     margin: 5px;
     border-radius: 10%;
     transition: all 0.5s;
@@ -168,6 +175,15 @@
     text-decoration: none;
 }
 
+#kruk_lista li a:hover {
+    color: darkslategray;
+    font-weight: 1200;
+}
+
+#kruk_text {
+    color: brown;
+}
+
 #kruk_article_1 {
     grid-area: a1;
     background-color: lightgrey;
@@ -235,6 +251,14 @@
 #kaktus_lista li {
     list-style: none;
     text-decoration: none;
+}
+
+#kaktus_lista li:hover a {
+    color: darkslategray;
+}
+
+#kaktus_text {
+    color: brown;
 }
 
 #kaktus_article {
@@ -306,6 +330,14 @@
     text-decoration: none;
 }
 
+#svamp_lista li:hover a {
+    color: darkslategray;
+}
+
+#svamp_text {
+    color: brown;
+}
+
 #svamp_article_1 {
     grid-area: a1;
     background-color: lightsteelblue;
@@ -326,5 +358,86 @@
     background-color: lightsalmon;
 }
 
-
 /*#endregion svampar*/
+
+/*#region om_oss*/
+
+#om_oss_grid_wrapper {
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) minmax(240px, 1fr);
+    grid-template-rows: 20vh 80vh 80vh 20vh;
+    grid-template-areas: 
+    "na na"
+    "a1 a2"
+    "a3 a4"
+    "fo fo"
+    ;
+    height: 100vh;
+    width: 100vw;
+}
+
+#om_oss_nav {
+    display: flex;
+    grid-area: na;
+    background-color: lightyellow;
+}
+
+#om_oss_lista {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+#om_oss_lista a {
+    text-decoration: none;
+    color: black;
+}
+
+#om_oss_lista li {
+    list-style: none;
+    text-decoration: none;
+}
+
+#om_oss_lista li a:hover {
+    color: darkslategray;
+    font-weight: 1200;
+}
+
+#om_oss_text {
+    color: brown;
+}
+
+#om_oss_article_1 {
+    grid-area: a1;
+    background-color: lightsalmon;
+}
+
+#om_oss_article_2 {
+    grid-area: a2;
+    background-color: lightgray;
+}
+
+#om_oss_article_3 {
+    grid-area: a3;
+    background-color: lightseagreen;
+}
+
+#om_oss_article_4 {
+    grid-area: a4;
+    background-color: lightgreen;
+}
+
+#om_oss_footer {
+    grid-area: fo;
+    background-color: lightsteelblue;
+}
+
+/*#endregion om_oss*/
