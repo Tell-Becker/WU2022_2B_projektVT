@@ -25,12 +25,16 @@
     width: 100vw;
 }
 
+#hemsida_namn {
+    color: beige;
+}
+
 #meny_lista {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 20vh;
-    background-color: lightblue;
+    background-color: rgb(4, 54, 21);
     position: absolute;
     top: -20vh;
     left: 0;
@@ -50,20 +54,20 @@
 #meny_lista a {
     text-decoration: none;
     letter-spacing: 0.1875rem;
-    color: black;
+    color: beige;
     font-weight: bold;
     font-size: 1.25rem;
     text-transform: uppercase;
 }
 
 #meny_lista li:hover a {
-    color: darkslategray;
+    color: darkgray;
 }
 
 #hamburgare_meny div {
     width: 30px;
     height: 4px;
-    background-color: black;
+    background-color: beige;
     margin: 5px;
     border-radius: 10%;
     transition: all 0.5s;
@@ -89,39 +93,115 @@
 #hem_header {
     display: flex;
     grid-area: he;
-    background-color: lightblue;
+    background-color: rgb(4, 54, 21);
     justify-content: space-around;
     align-items: center;
 }
 
 #hem_article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: ar;
-    background: lightcoral;
+    background-image: linear-gradient(rgb(4, 54, 21, 0.25),rgba(4, 54, 21, 0.25)),url('../img/hem_background.jpg');
+}
+
+#natur_citat { 
+    font-size: 3rem;
+    color: beige;
 }
 
 #kvadrat_bild_1 {
+    display: flex;
     grid-area: f1;
-    background-color: lightgoldenrodyellow ;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(4, 54, 21);
+}
+
+
+#kvadrat_bild_1 figcaption {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: beige;
+    bottom: 0;
+    padding: 10px;
+}
+
+#kvadrat_bild_1 figcaption:hover {
+    color: black;
+}
+
+#kruk_bild {
+    object-fit: cover;
+    width: 33.33vw;
+    height: 66.66vh;
+    border: 5px solid rgb(4, 54, 21);
 }
 
 #kvadrat_bild_2 {
+    display: flex;
     grid-area: f2;
-    background-color: lightgreen;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(4, 54, 21);
+}
+
+#kaktus_bild {
+    object-fit: cover;
+    width: 66.66vw;
+    height: 33.33vh;
+    border: 5px solid rgb(4, 54, 21);
 }
 
 #kvadrat_bild_3 {
+    display: flex;
     grid-area: f3;
-    background-color: lightgrey;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(4, 54, 21);
+}
+
+#svamp_bild {
+    object-fit: cover;
+    width: 33.33vw;
+    height: 66.66vh;
+    border: 5px solid rgb(4, 54, 21);
 }
 
 #kvadrat_bild_4 {
+    display: flex;
     grid-area: f4;
-    background-color: lightpink;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(4, 54, 21);
+}
+
+#om_oss_bild {
+    object-fit: cover;
+    width: 66.66vw;
+    height: 33.33vh;
+    border: 5px solid rgb(4, 54, 21);
 }
 
 #kvadrat_bild_5 {
+    display: flex;
     grid-area: f5;
-    background-color: lightseagreen;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(4, 54, 21);
+}
+
+#kvadrat_bild_5 figcaption{
+    position: absolute;
+}
+
+#hem_mitt_bild {
+    object-fit: cover;
+    width: 66.66vw;
+    height: 33.33vh;
+    border: 5px solid rgb(4, 54, 21);
 }
 
 /*#endregion Hem*/
@@ -148,7 +228,7 @@
 #kruk_nav {
     display: flex;
     grid-area: na;
-    background-color: lightcyan;
+    background-color: rgb(61, 132, 26);
 }
 
 #kruk_lista {
@@ -161,18 +241,18 @@
     font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
-    color: black;
     text-transform: uppercase;
 }
 
 #kruk_lista a {
     text-decoration: none;
-    color: black;
+    color: beige;
 }
 
 #kruk_lista li {
     list-style: none;
     text-decoration: none;
+    color: black;
 }
 
 #kruk_lista li a:hover {
@@ -180,13 +260,14 @@
     font-weight: 1200;
 }
 
-#kruk_text {
-    color: brown;
-}
-
 #kruk_article_1 {
+    display: flex;
     grid-area: a1;
-    background-color: lightgrey;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(61, 132, 26, 0.25),rgba(61, 132, 26, 0.25)),url('../img/kruk_background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 #kruk_article_2 {
@@ -226,7 +307,7 @@
 #kaktus_nav {
     display: flex;
     grid-area: na;
-    background-color: lightpink;
+    background-color: rgb(223, 178, 55);
 }
 
 #kaktus_lista {
@@ -239,13 +320,12 @@
     font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
-    color: black;
     text-transform: uppercase;
 }
 
 #kaktus_lista a {
     text-decoration: none;
-    color: black;
+    color: beige;
 }
 
 #kaktus_lista li {
@@ -257,13 +337,14 @@
     color: darkslategray;
 }
 
-#kaktus_text {
-    color: brown;
-}
-
 #kaktus_article {
+    display: flex;
     grid-area: a1;
-    background-color: lightgreen;
+    background-image: linear-gradient(rgb(223, 178, 55, 0.25),rgba(223, 178, 55, 0.25)),url('../img/kaktus_background.jpg');
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    color: beige;
 }
 
 #kaktus_article_2 {
@@ -303,7 +384,7 @@
 #svamp_nav {
     display: flex;
     grid-area: na;
-    background-color: lightgray;
+    background-color: rgb(130, 92, 34);
 }
 
 #svamp_lista {
@@ -316,13 +397,12 @@
     font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
-    color: black;
     text-transform: uppercase;
 }
 
 #svamp_lista a {
     text-decoration: none;
-    color: black;
+    color: beige;
 }
 
 #svamp_lista li {
@@ -334,13 +414,14 @@
     color: darkslategray;
 }
 
-#svamp_text {
-    color: brown;
-}
-
 #svamp_article_1 {
+    display: flex;
     grid-area: a1;
-    background-color: lightsteelblue;
+    background-image: linear-gradient(rgb(130, 92, 34, 0.25),rgba(130, 92, 34, 0.25)),url('../img/svamp_background.jpg');
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    color: beige;
 }
 
 #svamp_article_2 {
