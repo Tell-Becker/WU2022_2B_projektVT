@@ -13,10 +13,11 @@
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
-    grid-template-rows: 20vh 80vh 33.33vh 33.3vh 33.33vh;
+    grid-template-rows: 16vh 84vh 16vh 28vh 28vh 28vh;
     grid-template-areas: 
     "he he he"
     "ar ar ar"
+    "a2 a2 a2"
     "f1 f4 f4"
     "f1 f5 f3"
     "f2 f2 f3"
@@ -33,18 +34,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 20vh;
+    height: 16vh;
     background-color: rgb(4, 54, 21);
-    position: absolute;
-    top: -20vh;
+    top: -16vh;
     left: 0;
     width: 80vw;
     align-items: center;
     transition: all 1s;
+    position: absolute;
 }
 
 .meny {
-    transform: translateY(20vh);
+    transform: translateY(16vh);
 }
 
 #meny_lista li {
@@ -52,6 +53,7 @@
 }
 
 #meny_lista a {
+    
     text-decoration: none;
     letter-spacing: 0.1875rem;
     color: beige;
@@ -111,6 +113,24 @@
     color: beige;
 }
 
+#hem_article_2 {
+    grid-area: a2;
+    background-color: rgb(4, 54, 21);
+}
+
+.hem_bild_text {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: beige;
+    bottom: 0;
+    padding: 10px;
+}
+
+.hem_bild_text:hover {
+    color: black;
+}
+
 #kvadrat_bild_1 {
     display: flex;
     grid-area: f1;
@@ -120,23 +140,10 @@
 }
 
 
-#kvadrat_bild_1 figcaption {
-    position: absolute;
-    font-size: 2rem;
-    font-weight: bold;
-    color: beige;
-    bottom: 0;
-    padding: 10px;
-}
-
-#kvadrat_bild_1 figcaption:hover {
-    color: black;
-}
-
 #kruk_bild {
     object-fit: cover;
     width: 33.33vw;
-    height: 66.66vh;
+    height: 56vh;
     border: 5px solid rgb(4, 54, 21);
 }
 
@@ -148,10 +155,19 @@
     background-color: rgb(4, 54, 21);
 }
 
+#kvadrat_bild_2 figcaption {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: beige;
+    bottom: 0;
+    padding: 10px;
+}
+
 #kaktus_bild {
     object-fit: cover;
     width: 66.66vw;
-    height: 33.33vh;
+    height: 28vh;
     border: 5px solid rgb(4, 54, 21);
 }
 
@@ -166,7 +182,7 @@
 #svamp_bild {
     object-fit: cover;
     width: 33.33vw;
-    height: 66.66vh;
+    height: 56vh;
     border: 5px solid rgb(4, 54, 21);
 }
 
@@ -181,7 +197,7 @@
 #om_oss_bild {
     object-fit: cover;
     width: 66.66vw;
-    height: 33.33vh;
+    height: 28vh;
     border: 5px solid rgb(4, 54, 21);
 }
 
@@ -199,8 +215,8 @@
 
 #hem_mitt_bild {
     object-fit: cover;
-    width: 66.66vw;
-    height: 33.33vh;
+    width: 33.33vw;
+    height: 28vh;
     border: 5px solid rgb(4, 54, 21);
 }
 
@@ -210,10 +226,14 @@
 
 /*#region Krukväxter*/
 
+#kruk_body {
+    overflow-x: hidden;
+}
+
 #kruk_grid_wrapper {
     display: grid;
     grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
-    grid-template-rows: 20vh 80vh 40vh 40vh 20vh;
+    grid-template-rows: 16vh 84vh 80vh 80vh 20vh;
     grid-template-areas: 
     "na na na"
     "a1 a1 a1"
@@ -268,16 +288,31 @@
     background-image: linear-gradient(rgb(61, 132, 26, 0.25),rgba(61, 132, 26, 0.25)),url('../img/kruk_background.jpg');
     background-size: cover;
     background-position: center;
+    color: beige;
 }
 
 #kruk_article_2 {
+    display: flex;
     grid-area: a2;
-    background-color: lightskyblue;
+    background-color: rgb(61, 132, 26);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#kruk_article_bild_1 {
+    height: 30vh;
 }
 
 #kruk_article_3 {
+    display: flex;
     grid-area: a3;
-    background-color: lightyellow;
+    background-color: rgb(61, 132, 26);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#kruk_article_bild_2 {
+    height: 30vh;
 }
 
 #kruk_footer {
@@ -289,10 +324,14 @@
 
 /*#region kaktus*/
 
+#kaktus_body {
+    overflow-x: hidden;
+}
+
 #kaktus_grid_wrapper {
     display: grid;
     grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
-    grid-template-rows: 20vh 80vh 40vh 40vh 20vh;
+    grid-template-rows: 16vh 84vh 80vh 80vh 20vh;
     grid-template-areas: 
     "na na na"
     "a1 a1 a1"
@@ -348,13 +387,27 @@
 }
 
 #kaktus_article_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     grid-area: a2;
-    background-color: lightyellow;
+    background-color: rgb(223, 178, 55);
+}
+
+#kaktus_article_bild_1 {
+    height: 20vh;
 }
 
 #kaktus_article_3 {
+    display: flex;
     grid-area: a3;
-    background-color: lightcyan;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(223, 178, 55);
+}
+
+#kaktus_article_bild_2 {
+    height: 20vh;
 }
 
 #kaktus_footer {
@@ -366,10 +419,14 @@
 
 /*#region svampar*/
 
+#svamp_body {
+    overflow-x: hidden;
+}
+
 #svamp_grid_wrapper {
     display: grid;
     grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
-    grid-template-rows: 20vh 80vh 40vh 40vh 20vh;
+    grid-template-rows: 16vh 84vh 80vh 80vh 20vh;
     grid-template-areas: 
     "na na na"
     "a1 a1 a1"
@@ -420,18 +477,33 @@
     background-image: linear-gradient(rgb(130, 92, 34, 0.25),rgba(130, 92, 34, 0.25)),url('../img/svamp_background.jpg');
     align-items: center;
     justify-content: center;
+    background-size: cover;
     background-position: center;
     color: beige;
 }
 
 #svamp_article_2 {
+    display: flex;
     grid-area: a2;
-    background-color: lightpink;
+    background-color: rgb(130, 92, 34);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#svamp_article_bild_1 {
+    height: 20vh;
 }
 
 #svamp_article_3 {
+    display: flex;
     grid-area: a3;
-    background-color: lightcyan;
+    background-color: rgb(130, 92, 34);
+    justify-content: space-around;
+    align-items: center;
+}
+
+#svamp_article_bild_2 {
+    height: 20vh;
 }
 
 #svamp_footer {
@@ -442,6 +514,10 @@
 /*#endregion svampar*/
 
 /*#region om_oss*/
+
+#om_oss_body {
+    overflow-x: hidden;
+}
 
 #om_oss_grid_wrapper {
     display: grid;
@@ -460,7 +536,7 @@
 #om_oss_nav {
     display: flex;
     grid-area: na;
-    background-color: lightyellow;
+    background-color: rgb(4, 54, 21);
 }
 
 #om_oss_lista {
@@ -473,13 +549,12 @@
     font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
-    color: black;
     text-transform: uppercase;
 }
 
 #om_oss_lista a {
     text-decoration: none;
-    color: black;
+    color: beige;
 }
 
 #om_oss_lista li {
@@ -492,13 +567,10 @@
     font-weight: 1200;
 }
 
-#om_oss_text {
-    color: brown;
-}
-
 #om_oss_article_1 {
     grid-area: a1;
-    background-color: lightsalmon;
+    background-color: rgb(4, 54, 21);
+    background-image: linear-gradient(rgb(4, 54, 21, 0.25),rgba(4, 54, 21, 0.25)),url('../img/om_oss_article_bild_1.jpg');
 }
 
 #om_oss_article_2 {
