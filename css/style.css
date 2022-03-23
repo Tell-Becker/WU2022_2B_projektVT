@@ -53,7 +53,6 @@
 }
 
 #meny_lista a {
-    
     text-decoration: none;
     letter-spacing: 0.1875rem;
     color: beige;
@@ -98,6 +97,18 @@
     background-color: rgb(4, 54, 21);
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 16vh;
+}
+
+#grid_wrapper a:hover .hem_bild_text{
+    color: black; 
+}
+
+#grid_wrapper a:hover {
+    transform: scale(2);
+    background-size: cover;
 }
 
 #hem_article {
@@ -106,6 +117,7 @@
     align-items: center;
     grid-area: ar;
     background-image: linear-gradient(rgb(4, 54, 21, 0.25),rgba(4, 54, 21, 0.25)),url('../img/hem_background.jpg');
+    background-size: cover;
 }
 
 #natur_citat { 
@@ -123,22 +135,24 @@
     font-size: 2rem;
     font-weight: bold;
     color: beige;
-    bottom: 0;
     padding: 10px;
 }
 
-.hem_bild_text:hover {
-    color: black;
-}
-
 #kvadrat_bild_1 {
-    display: flex;
     grid-area: f1;
     overflow: hidden;
     position: relative;
     background-color: rgb(4, 54, 21);
 }
 
+#kvadrat_bild_1 div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
 
 #kruk_bild {
     object-fit: cover;
@@ -148,20 +162,19 @@
 }
 
 #kvadrat_bild_2 {
-    display: flex;
     grid-area: f2;
     overflow: hidden;
     position: relative;
     background-color: rgb(4, 54, 21);
 }
 
-#kvadrat_bild_2 figcaption {
+#kvadrat_bild_2 div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    font-size: 2rem;
-    font-weight: bold;
-    color: beige;
-    bottom: 0;
-    padding: 10px;
 }
 
 #kaktus_bild {
@@ -172,11 +185,20 @@
 }
 
 #kvadrat_bild_3 {
-    display: flex;
     grid-area: f3;
     overflow: hidden;
     position: relative;
     background-color: rgb(4, 54, 21);
+}
+
+
+#kvadrat_bild_3 div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 }
 
 #svamp_bild {
@@ -187,11 +209,20 @@
 }
 
 #kvadrat_bild_4 {
-    display: flex;
     grid-area: f4;
     overflow: hidden;
     position: relative;
     background-color: rgb(4, 54, 21);
+}
+
+
+#kvadrat_bild_4 div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 }
 
 #om_oss_bild {
