@@ -34,6 +34,10 @@
     left: 0;
     padding: 100px;
     position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-size: 2rem;
 }
 
 #hemsida_logo {
@@ -44,33 +48,38 @@
 
 #meny_lista {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    height: 16vh;
+    height: 50vh;
     background-color: rgb(4, 54, 21);
-    top: -16vh;
+    top: -50vh;
     left: 0;
-    width: 80vw;
+    width: 70vw;
     align-items: center;
     transition: all 1s;
     position: absolute;
+    z-index: 1;
 }
 
 .meny {
-    transform: translateY(16vh);
+    transform: translateY(50vh);
+    z-index: -100;
+    margin-top: 16vh;
 }
 
 #meny_lista li {
     list-style: none;
+    z-index: 1;
 }
 
 #meny_lista a {
     text-decoration: none;
     letter-spacing: 0.1875rem;
     color: beige;
-    font-weight: bold;
-    font-size: 1.25rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 #meny_lista li:hover a {
@@ -84,6 +93,7 @@
     margin: 5px;
     border-radius: 10%;
     transition: all 0.5s;
+    z-index: 10;
 }
 
 .toggle #line2 {
@@ -99,8 +109,9 @@
 }
 
 #hamburgare_meny {
-    margin-right: 3.125rem;
     cursor: pointer;
+    z-index: 10;
+    margin-right: 2rem;
 }
 
 #hem_header {
@@ -124,10 +135,11 @@
     grid-area: ar;
     background-image: linear-gradient(rgb(4, 54, 21, 0.25),rgba(4, 54, 21, 0.25)),url('../img/hem_background.jpg');
     background-size: cover;
+    z-index: -1;
 }
 
 #natur_citat { 
-    font-size: 3rem;
+    font-size: 5rem;
     color: beige;
 }
 
@@ -139,7 +151,7 @@
 
 .hem_bild_text {
     position: absolute;
-    font-size: 2rem;
+    font-size: 5vw;
     font-weight: bold;
     color: beige;
     padding: 10px;
@@ -283,7 +295,8 @@
 }
 
 #grid_wrapper a:hover .hem_bild_text{
-    color: darkgray; 
+    font-size: 6vw;
+    color: rgb(255, 255, 255);
 }
 
 .hem_figure_id{
@@ -319,6 +332,7 @@
     ;
     height: 300vh;
     width: 100vw;
+    overflow-y: hidden;
 }
 
 #kruk_nav {
@@ -934,7 +948,7 @@ font-size: 1.1rem;
 
 #om_oss_grid_wrapper {
     display: grid;
-    grid-template-columns: minmax(110px, 1fr) minmax(110px, 1fr);
+    grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr);
     grid-template-rows: 16vh 84vh 16vh 84vh 16vh;
     grid-template-areas: 
     "na na"
@@ -988,13 +1002,45 @@ font-size: 1.1rem;
 
 #om_oss_article_1 {
     grid-area: a1;
-    background-color: pink;
-    background-image: url();
+    background-image: linear-gradient(rgb(4, 54, 21, 0.2),rgba(4, 54, 21, 0.2)),url('../img/om_oss_article_bild.png');
+    background-size: cover;
 }
 
 #om_oss_article_2 {
+    display: flex;
     grid-area: a2;
-    background-color: red;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgb(4, 54, 21, 0.5),rgba(4, 54, 21, 0.5)),url('../img/om_oss_article_background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    flex-direction: column;
+    color: beige;
+    padding-top: 15%;
+    padding-bottom: 20%;
+}
+
+#om_oss_lista_1 {
+    margin-bottom: auto;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.om_oss_li {
+    list-style: circle;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+#om_oss_lista_2 {
+    margin-bottom: auto;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #div_mellan_om_oss {
@@ -1004,17 +1050,114 @@ font-size: 1.1rem;
 
 #om_oss_article_3 {
     grid-area: a3;
-    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgb(4, 54, 21, 0.5),rgba(4, 54, 21, 0.5)),url('../img/om_oss_article_background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    color: beige;
+    flex-direction: column;
+    padding-top: 15%;
+    padding-bottom: 20%;
+}
+
+#om_oss_lista_3 {
+    margin-bottom: auto;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#om_oss_lista_4 {
+    margin-bottom: auto;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #om_oss_article_4 {
     grid-area: a4;
-    background-color: yellow;
+}
+
+#google_maps {
+    height: 84vh;
+    width: 50vw;
 }
 
 #om_oss_footer {
     grid-area: fo;
     background-color: rgb(4, 54, 21);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: beige;
+    justify-content: space-around;
 }
 
+.om_oss_footer_listor {
+    list-style: none;
+    font-size: 1.1rem;
+    }
+
 /*#endregion om_oss*/
+
+@media screen and (min-width: 800px) {
+
+    #grid_wrapper {
+        display: grid;
+        grid-template-columns: minmax(130px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr);
+        grid-template-rows: 16vh 84vh 16vh 42vh 42vh;
+        grid-template-areas: 
+        "he he he he he he"
+        "ar ar ar ar ar ar"
+        "a2 a2 a2 a2 a2 a2"
+        "f1 f1 f5 f5 f2 f2"
+        "f3 f3 f3 f4 f4 f4"
+        ;
+        height: 200vh;
+        width: 100vw;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    #hemsida_namn {
+        font-size: 3rem;
+    }
+
+    #meny_lista {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 16vh;
+        background-color: rgb(4, 54, 21);
+        top: -16vh;
+        left: 0;
+        width: 80vw;
+        align-items: center;
+        transition: all 1s;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .meny {
+        transform: translateY(16vh);
+        z-index: -100;
+        margin-top: 0;
+    }
+    
+    #meny_lista a {
+        text-decoration: none;
+        letter-spacing: 0.1875rem;
+        color: beige;
+        font-weight: bolder;
+        font-size: 2rem;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+    
+}
