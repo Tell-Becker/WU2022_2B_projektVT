@@ -360,12 +360,6 @@
     font-weight: 1200;
 }
 
-/* .ultra_img {
-    background-image: url('../img/kruk_article_backgrund.jpg');
-    background-repeat: no-repeat;
-    background: cover;
-} */
-
 #kruk_article_1 {
     display: flex;
     grid-area: a1;
@@ -418,10 +412,11 @@
     margin-bottom: auto;
     list-style: none;
     margin-top: 10px;
+    margin-right: 30px;
 }
 
 #kruk_lista_2 li {
-    margin: 3px;
+    margin: 3px
 }
 
 #kruk_lista_2 {
@@ -438,7 +433,25 @@
     color: beige;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
 
+#kruk_lista_3 {
+    margin-bottom: auto;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#kruk_lista_4 li {
+    margin: 3px;
+}
+
+#kruk_lista_4 {
+    margin-top: 10px;
+    list-style: none;
 }
 
 #kruk_article_5 {
@@ -458,6 +471,13 @@
     filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.5))
 }
 
+.kruk_li {
+    list-style: circle;
+    margin: 25px;
+    margin-left: 50x;
+    margin-right: 50px;
+}
+
 #kruk_footer {
     grid-area: fo;
     background-image: linear-gradient(rgba(13, 30, 4, 0.75),rgba(13, 30, 4, 0.75)),url('../img/kruk_article_backgrund.jpg');
@@ -468,6 +488,11 @@
     align-items: center;
     justify-content: space-evenly;
     color: rgb(245, 245, 220);
+}
+
+.kruk_footer_listor {
+    list-style: none;
+    font-size: 1.1rem;
 }
 
 #instagram_ikon {
@@ -492,14 +517,17 @@
 
 #kaktus_grid_wrapper {
     display: grid;
-    grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr) minmax(160px, 1fr);
-    grid-template-rows: 16vh 84vh 80vh 80vh 20vh;
+    grid-template-columns: minmax(240px, 1fr) minmax(240px, 1fr);
+    grid-template-rows: 16vh 84vh 16vh 42vh 42vh 42vh 42vh 16vh;
     grid-template-areas: 
-    "na na na"
-    "a1 a1 a1"
-    "a2 a2 a2"
-    "a3 a3 a3"
-    "fo fo fo"
+    "na na"
+    "a1 a1"
+    "di di"
+    "a2 a2"
+    "a3 a30"
+    "a4 a4"
+    "a50 a5"
+    "fo fo"
     ;
     height: 100vh;
     width: 100vw;
@@ -511,6 +539,8 @@
     background-color: rgb(182, 146, 46);
     position: fixed;
     height: 16vh;
+    filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.5));
+    z-index: 1;
 }
 
 #kaktus_lista {
@@ -534,6 +564,7 @@
 #kaktus_lista li {
     list-style: none;
     text-decoration: none;
+    color: rgb(35, 35, 32);
 }
 
 #kaktus_lista li:hover a {
@@ -551,33 +582,141 @@
     font-size: 2rem;
 }
 
+#div_kaktus_mellan_article {
+    grid-area: di;
+    background-color: rgb(182, 146, 46);
+}
+
 #kaktus_article_2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     grid-area: a2;
-    background-color: rgb(182, 146, 46);
+    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #kaktus_article_bild_1 {
-    height: 20vh;
+    height: 32vh;
+    width: 80vw;
+    object-fit: cover;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+    margin-top: 40px;
 }
 
 #kaktus_article_3 {
     display: flex;
     grid-area: a3;
+    align-items: center;
+    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-attachment: fixed;
+    background-size: cover;
+    color: beige;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#kaktus_article_30 {
+    display: flex;
+    grid-area: a30;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(182, 146, 46);
+    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-attachment: fixed;
+    background-size: cover;
+    color: beige;
+    flex-direction: column;
+}
+
+#kaktus_lista_1 {
+    margin-bottom: auto;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#kaktus_lista_2 {
+    margin-bottom: auto;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.kaktus_titles {
+    margin-top: 10px;
+}
+
+#kaktus_article_4 {
+    display: flex;
+    grid-area: a4;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #kaktus_article_bild_2 {
-    height: 20vh;
+    height: 32vh;
+    width: 80vw;
+    object-fit: cover;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+    margin-top: 40px;
 }
+
+#kaktus_article_50 {
+    display: flex;
+    grid-area: a50;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-attachment: fixed;
+    background-size: cover;
+    color: beige;
+    flex-direction: column;
+}
+
+#kaktus_article_5 {
+    display: flex;
+    grid-area: a5;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-attachment: fixed;
+    background-size: cover;
+    color: beige;
+    flex-direction: column;
+}
+
+#kaktus_lista_3 {
+    margin-bottom: auto;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 20px
+}
+
+#kaktus_lista_4 {
+    margin-bottom: auto;
+    list-style: none;
+    margin-top: 20px;
+}
+
 
 #kaktus_footer {
     grid-area: fo;
-    background-color: rgb(182, 146, 46);
+    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(245, 245, 220);
+}
+
+.kaktus_footer_listor {
+    list-style: none;
+    font-size: 1.1rem;
 }
 
 /*#endregion kaktus*/
