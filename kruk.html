@@ -9,25 +9,35 @@
 </head>
 <body id="kruk_body">
     <div id=kruk_grid_wrapper>
-        <nav id="kruk_nav">
-            <ul id="kruk_lista">
-                <li>
-                    <a href="index.html">Startsida</a>
-                </li>
-                <li id="kruk_text">
-                    Krukväxter
-                </li>
-                <li>
-                    <a href="kaktus.html">Kaktusar</a>
-                </li>
-                <li>
-                    <a href="svamp.html">Svampar</a>
-                </li>
-                <li>
-                    <a href="om_oss.html">Om oss</a>
-                </li>
-            </ul>
-        </nav>
+        <header class="hem_header" id="kruk_header" >
+            <img src="img/WU-2022_logo.png" alt="Hemsidans logotyp" id="hemsida_logo">
+            <h1 id="hemsida_namn">Natur Initiativet</h1>
+                <nav id="meny">
+                <ul class="meny_lista" id="kruk_meny">
+                    <li>
+                        <a href="index.html">Hem</a>
+                    </li>
+                    <li>
+                       Krukväxter
+                    </li>
+                    <li>
+                        <a href="kaktus.html">Kaktus</a>
+                    </li>
+                    <li>
+                        <a href="svamp.html">Svampar</a>
+                    </li>
+                    <li>
+                        <a href="om_oss.html">Om oss</a>
+                    </li>
+                </ul>
+
+                <div id="hamburgare_meny">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line3"></div>
+                </div>
+            </nav>
+        </header>
         <article id="kruk_article_1">
             <h2>Krukväxter</h2>
         </article>
@@ -38,9 +48,9 @@
         <article id="kruk_article_3">
             <h3>Info</h3>
             <ul id="kruk_lista_1">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Placerat orci nulla pellentesque dignissim enim sit amet. Id donec ultrices tincidunt arcu non sodales. Dignissim diam quis enim lobortis scelerisque. Cursus sit amet dictum sit. Viverra orci sagittis eu volutpat odio facilisis mauris.</li>
-                <li class="kruk_li">Viverra orci sagittis eu volutpat odio facilisis mauris.</li>
-                <li class="kruk_li">Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur elit. Dignissim diam quis enim lobortis scelerisque. Cursus sit amet dictum sit. Viverra orci sagittis eu mauris.</li>
+                <li class="kruk_li">Viverra orci sagittis odio facilisis mauris.</li>
+                <li class="kruk_li">Malesuada elementum curabitur vitae nunc sed.</li>
             </ul>
             <h3>Kostnad</h3>
             <ul id="kruk_lista_2">
@@ -52,10 +62,10 @@
         <article id="kruk_article_4">
             <h3>Info</h3>
             <ul id="kruk_lista_3">
-                <li>Ut repellat rerum in odio adipisci et illum dolorum ut consequatur.</li>
-                <li class="kruk_li">Et quia voluptatem est corporis incidunt eos dolore.</li>
-                <li> Et facilis tempore dolorum quae et inventore dignissimos ad voluptatem mollitia ut cumque autem. Et quia laboriosam ex odio tenetur nam illum omnis et porro voluptatem. Et ipsam expedita eum.</li>
-                <li class="kruk_li">Sit voluptatem officiis hic molestiae perspiciatis et eligendi repellat.</li>
+                <li>Ut repellat rerum in odio adipisci consequatur.</li>
+                <li class="kruk_li">Et quia voluptatem est dolore.</li>
+                <li> Et facilis tempore dolorum cumque autem. Et ipsam expedita eum.</li>
+                <li class="kruk_li">Sit voluptatem officiis hic molestiae perspiciatis.</li>
             </ul>
             <h3>Kostnad</h3>
             <ul id="kruk_lista_4">
@@ -69,28 +79,22 @@
         </article>
         <footer id="kruk_footer" class="ultra_img">
             <ul class="kruk_footer_listor">
-                <li>Öppettider</li>
+                <li><h4>Öppettider</h4></li>
                 <li>mån-fre 08 - 22</li>
                 <li>lör-sön 09 - 21</li>
                 
             </ul>
             <ul class="kruk_footer_listor">
-                <li>Kontakt Oss</li>
+                <li><h4>Kontakta oss</h4></li>
                 <li>Telefon: 07800800XX</li>
-                <li>Gmail: Naturinitativet@gmail.com</li>
+                <li>Gmail: NI@gmail.com</li>
             </ul>
             <img src="img/instagram_logo.png" alt="instagram ikon" id="instagram_ikon">
             <img src="img/facebook_logo_2022.png" alt="facebook ikon" id="facebook_ikon">
         </footer>
-        
-
-
-
-
-
-
     </div>
 
+    <script src="js/script.js"></script>
 
 </body>
 </html>

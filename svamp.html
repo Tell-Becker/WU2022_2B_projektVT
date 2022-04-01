@@ -9,25 +9,35 @@
 </head>
 <body id="svamp_body">
     <div id=svamp_grid_wrapper>
-        <nav id="svamp_nav">
-            <ul id="svamp_lista">
-                <li>
-                    <a href="index.html">Startsida</a>
-                </li>
-                <li>
-                    <a href="kruk.html">Krukväxter</a>
-                </li>
-                <li>
-                    <a href="kaktus.html">Kaktusar</a>
-                </li>
-                <li id="svamp_text">
-                    Svampar
-                </li>
-                <li>
-                    <a href="om_oss.html">Om oss</a>
-                </li>
-            </ul>
-        </nav>
+        <header class="hem_header" id="svamp_header" >
+            <img src="img/WU-2022_logo.png" alt="Hemsidans logotyp" id="hemsida_logo">
+            <h1 id="hemsida_namn">Natur Initiativet</h1>
+                <nav id="meny">
+                <ul class="meny_lista" id="svamp_meny">
+                    <li>
+                        <a href="index.html">hem</a>
+                    </li>
+                    <li>
+                       <a href="kruk.html">Krukväxter</a>
+                    </li>
+                    <li>
+                        <a href="kaktus.html">Kaktus</a>
+                    </li>
+                    <li>
+                        Svampar
+                    </li>
+                    <li>
+                        <a href="om_oss.html">Om oss</a>
+                    </li>
+                </ul>
+
+                <div id="hamburgare_meny">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line3"></div>
+                </div>
+            </nav>
+        </header>
         <div id="div_svamp_mellan_article"></div>
         <article id="svamp_article_1">
             <h2>Svampar</h2>
@@ -35,9 +45,9 @@
         <article id="svamp_article_2">
             <h3>Info</h3>
             <ul id="svamp_lista_1">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Placerat orci nulla pellentesque dignissim enim sit amet. Id donec ultrices tincidunt arcu non sodales. Dignissim diam quis enim lobortis scelerisque. Cursus sit amet dictum sit. Viverra orci sagittis eu volutpat odio facilisis mauris.</li>
-                <li class="kruk_li">Viverra orci sagittis eu volutpat odio facilisis mauris.</li>
-                <li class="kruk_li">Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed darace.</li>
+                <li class="kruk_li">Viverra orci sagittis eu.</li>
+                <li class="kruk_li">Malesuada bibendum arcu nunc sed.</li>
             </ul>
             <h3>Kostnad</h3>
             <ul id="svamp_lista_2">
@@ -55,10 +65,10 @@
         <article id="svamp_article_5">
             <h3>Info</h3>
             <ul id="svamp_lista_3">
-                <li>Ut repellat rerum in odio adipisci et illum dolorum ut consequatur.</li>
-                <li class="kruk_li">Et quia voluptatem est corporis incidunt eos dolore.</li>
-                <li> Et facilis tempore dolorum quae et inventore dignissimos ad voluptatem mollitia ut cumque autem. Et quia laboriosam ex odio tenetur nam illum omnis et porro voluptatem. Et ipsam expedita eum.</li>
-                <li class="kruk_li">Sit voluptatem officiis hic molestiae perspiciatis et eligendi repellat.</li>
+                <li>Ut repellat rerum in odio adipisci.</li>
+                <li class="kruk_li">Et quia voluptatem est astus.</li>
+                <li> Et facilis tempore dolorum inventore dignissimos ad voluptatem mollitia ut .</li>
+                <li class="kruk_li">Sit voluptatem officiis repellat.</li>
             </ul>
             <h3>Kostnad</h3>
             <ul id="svamp_lista_4">
@@ -69,20 +79,22 @@
         </article>
         <footer id="svamp_footer">
             <ul class="svamp_footer_listor">
-                <li>Öppettider</li>
+                <li><h4>Öppettider</h4></li>
                 <li>mån-fre 08 - 22</li>
                 <li>lör-sön 09 - 21</li>
                 
             </ul>
             <ul class="svamp_footer_listor">
-                <li>Kontakt Oss</li>
+                <li><h4>Kontakt Oss</h4></li>
                 <li>Telefon: 07800800XX</li>
-                <li>Gmail: Naturinitativet@gmail.com</li>
+                <li>Gmail: NI@gmail.com</li>
             </ul>
             <img src="img/instagram_logo.png" alt="instagram ikon" id="instagram_ikon">
             <img src="img/facebook_logo_2022.png" alt="facebook ikon" id="facebook_ikon">
         </footer>
     </div>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
