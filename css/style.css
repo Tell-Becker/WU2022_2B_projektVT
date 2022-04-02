@@ -302,7 +302,6 @@ body h3 {
     position: relative;
     background-image: linear-gradient(rgb(4, 54, 21, 0.25),rgba(4, 54, 21, 0.25)),url('../img/hem_mitt_bild.jpg');
     background-size: cover;
-    background-color: rgb(4, 54, 21);
     border: 5px solid rgb(4, 54, 21);
 }
 
@@ -398,7 +397,6 @@ body h3 {
 
 #kruk_lista li a:hover {
     color: darkgray;
-    font-weight: 1200;
 }
 
 #kruk_article_1 {
@@ -996,7 +994,6 @@ font-size: 0.7rem;
 
 #om_oss_lista li a:hover {
     color: darkgray;
-    font-weight: 1200;
 }
 
 #om_oss_article_1 {
@@ -1383,7 +1380,7 @@ font-size: 0.7rem;
 
     #om_oss_lista_1 {
         font-size: 1.2rem;
-        margin-top: 10pxf;
+        margin-top: 10px;
     }
 
     #om_oss_lista_2 {
