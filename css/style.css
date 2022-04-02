@@ -4,11 +4,24 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+body h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifs;
+}
+
+
 /*#region Hem*/
 
 #hem_body {
     overflow-x: hidden;
     background-color: rgb(4, 54, 21);
+}
+
+#hem_body h3 {
+    font-family: initial;
 }
 
 #grid_wrapper {
@@ -1006,6 +1019,7 @@ font-size: 0.7rem;
     grid-area: a1;
     background-image: linear-gradient(rgb(4, 54, 21, 0.2),rgba(4, 54, 21, 0.2)),url('../img/om_oss_article_bild.png');
     background-size: cover;
+
 }
 
 #om_oss_article_2 {
@@ -1376,6 +1390,7 @@ font-size: 0.7rem;
 
     #om_oss_lista_1 {
         font-size: 1.2rem;
+        margin-top: 10pxf;
     }
 
     #om_oss_lista_2 {
