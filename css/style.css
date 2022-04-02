@@ -50,7 +50,7 @@ body h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;
-    font-size: 2rem;
+    font-size: 1.4rem;
     z-index: -1;
 }
 
@@ -337,10 +337,6 @@ body h3 {
 
 /*#region Krukvaxter*/
 
-#kruk_body {
-    overflow-x: hidden;
-}
-
 #kruk_grid_wrapper {
     display: grid;
     grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr);
@@ -557,10 +553,6 @@ body h3 {
 
 /*#region kaktus*/
 
-#kaktus_body {
-    overflow-x: hidden;
-}
-
 #kaktus_grid_wrapper {
     display: grid;
     grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr);
@@ -749,10 +741,6 @@ body h3 {
 /*#endregion kaktus*/
 
 /*#region svampar*/
-
-#svamp_body {
-    overflow-x: hidden;
-}
 
 #svamp_grid_wrapper {
     display: grid;
@@ -956,10 +944,6 @@ font-size: 0.7rem;
 
 /*#region om_oss*/
 
-#om_oss_body {
-    overflow-x: hidden;
-}
-
 #om_oss_grid_wrapper {
     display: grid;
     grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr);
@@ -1035,6 +1019,7 @@ font-size: 0.7rem;
 }
 
 #om_oss_lista_1 {
+    margin-top: 10px;
     list-style: none;
     margin-left: 20px;
     margin-right: 20px;
