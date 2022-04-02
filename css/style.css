@@ -1018,6 +1018,10 @@ font-size: 0.7rem;
     color: beige;
 }
 
+#om_oss_article_2 h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #om_oss_lista_1 {
     margin-top: 10px;
     list-style: none;
@@ -1049,6 +1053,10 @@ font-size: 0.7rem;
     background-size: cover;
     color: beige;
     flex-direction: column;
+}
+
+#om_oss_article_3 h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #om_oss_lista_3 {
