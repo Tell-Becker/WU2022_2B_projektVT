@@ -572,17 +572,17 @@ body h3 {
 }
 
 #kaktus_header {
-    background-color: rgb(182, 146, 46);
+    background-color: rgb(155, 124, 38);
 }
 
 #kaktus_meny {
-    background-color: rgb(182, 146, 46);
+    background-color: rgb(155, 124, 38);
 }
 
 #kaktus_article {
     display: flex;
     grid-area: a1;
-    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_background.jpg');
+    background-image: linear-gradient(rgb(155, 124, 38, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_background.jpg');
     justify-content: center;
     align-items: center;
     background-size: cover;
@@ -592,7 +592,7 @@ body h3 {
 
 #div_kaktus_mellan_article {
     grid-area: di;
-    background-color: rgb(182, 146, 46);
+    background-color: rgb(155, 124, 38);
 }
 
 #kaktus_article_2 {
@@ -600,7 +600,7 @@ body h3 {
     justify-content: space-around;
     align-items: center;
     grid-area: a2;
-    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-image: linear-gradient(rgb(155, 124, 38, 0.4),rgba(155, 124, 38, 0.4)),url('../img/kaktus_article_backgrund.png');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -618,7 +618,7 @@ body h3 {
     display: flex;
     grid-area: a3;
     align-items: center;
-    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-image: linear-gradient(rgb(155, 124, 38, 0.4),rgba(155, 124, 38, 0.4)),url('../img/kaktus_article_backgrund.png');
     background-attachment: fixed;
     background-size: cover;
     color: beige;
@@ -631,7 +631,7 @@ body h3 {
     grid-area: a30;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-image: linear-gradient(rgb(155, 124, 38, 0.4),rgba(155, 124, 38, 0.4)),url('../img/kaktus_article_backgrund.png');
     background-attachment: fixed;
     background-size: cover;
     color: beige;
@@ -663,7 +663,7 @@ body h3 {
     grid-area: a4;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-image: linear-gradient(rgb(155, 124, 38, 0.4),rgba(155, 124, 38, 0.4)),url('../img/kaktus_article_backgrund.png');
     background-attachment: fixed;
     background-size: cover;
     padding: 30px;
@@ -683,7 +683,7 @@ body h3 {
     grid-area: a50;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-image: linear-gradient(rgb(155, 124, 38,0.4),rgba(155, 124, 38, 0.4)),url('../img/kaktus_article_backgrund.png');
     background-attachment: fixed;
     background-size: cover;
     color: beige;
@@ -695,7 +695,7 @@ body h3 {
     grid-area: a5;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-image: linear-gradient(rgb(155, 124, 38, 0.4),rgba(155, 124, 38, 0.4)),url('../img/kaktus_article_backgrund.png');
     background-attachment: fixed;
     background-size: cover;
     color: beige;
@@ -723,7 +723,7 @@ body h3 {
 
 #kaktus_footer {
     grid-area: fo;
-    background-image: linear-gradient(rgb(182, 146, 46, 0.4),rgba(182, 146, 46, 0.4)),url('../img/kaktus_article_backgrund.png');
+    background-image: linear-gradient(rgb(155, 124, 38, 0.4),rgba(155, 124, 38, 0.4)),url('../img/kaktus_article_backgrund.png');
     background-attachment: fixed;
     background-size: cover;
     display: flex;
