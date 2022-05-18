@@ -447,15 +447,14 @@ body h3 {
 
 #kruk_lista_1 {
     list-style: none;
+    width: 45vw;
     margin-top: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
     font-size: 0.9rem;
     margin-bottom: 10px;
 }
 
 #kruk_lista_2 li {
-    margin: 3px
+    margin: 3px;
 }
 
 #kruk_lista_2 {
@@ -479,9 +478,18 @@ body h3 {
 #kruk_lista_3 {
     list-style: none;
     margin-top: 10px;
-    margin-left: 30px;
     font-size: 0.9rem;
     margin-bottom: 10px;
+    width: 45vw;
+}
+
+#under_title_viktig {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 15px;
 }
 
 #kruk_lista_4 li {
@@ -554,7 +562,7 @@ body h3 {
 #kaktus_grid_wrapper {
     display: grid;
     grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr);
-    grid-template-rows: 16vh 84vh 16vh 42vh 42vh 42vh 42vh 16vh;
+    grid-template-rows: 16vh 84vh 16vh 42vh 58vh 42vh 58vh 16vh;
     grid-template-areas: 
     "na na"
     "a1 a1"
@@ -565,7 +573,7 @@ body h3 {
     "a50 a5"
     "fo fo"
     ;
-    height: 300vh;
+    height: 332vh;
     width: 100vw;
 }
 
@@ -620,8 +628,9 @@ body h3 {
     background-attachment: fixed;
     background-size: cover;
     color: beige;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
+    overflow: auto;
 }
 
 #kaktus_article_30 {
@@ -640,9 +649,9 @@ body h3 {
     margin-bottom: auto;
     list-style: none;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
     font-size: 0.9rem;
+    width: 40vw;
+
 }
 
 #kaktus_lista_2 {
@@ -653,7 +662,7 @@ body h3 {
 }
 
 .kaktus_titles {
-    margin-top: 10px;
+    margin-top: ;
 }
 
 #kaktus_article_4 {
@@ -712,10 +721,9 @@ body h3 {
 #kaktus_lista_4 {
     margin-bottom: auto;
     list-style: none;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-top: 20px;
     font-size: 0.9rem;
+    width: 40vw;
 }
 
 
@@ -1181,7 +1189,7 @@ font-size: 0.7rem;
     #kruk_grid_wrapper {
         display: grid;
         grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr); 
-        grid-template-rows: 16vh 84vh 16vh 84vh 16vh;
+        grid-template-rows: 16vh 84vh 16vh 116vh 16vh;
         grid-template-areas: 
         "na na na na "
         "a1 a1 a1 a1"
@@ -1189,7 +1197,7 @@ font-size: 0.7rem;
         "a2 a3 a5 a4"
         "fo fo fo fo"
         ;
-        height: 216vh;
+        height: 248vh;
         width: 100vw;
         overflow-y: hidden;
         overflow-x: hidden;
@@ -1207,11 +1215,24 @@ font-size: 0.7rem;
         font-size: 1.4rem;
     }
 
+    #kruk_article_3 {
+        display: flex;
+        justify-content: start;
+        padding-top: 10rem;
+    }
+    #kruk_article_4 {
+        display: flex;
+        justify-content: start;
+        padding-top: 10rem;
+    }
+
     #kruk_lista_1 {
+        width: 22vw;
         font-size: 1.2rem;
     }
     
     #kruk_lista_2 {
+        width: 22vw;
         font-size: 1.2rem;
     }
 
@@ -1220,10 +1241,16 @@ font-size: 0.7rem;
     }
 
     #kruk_lista_3 {
+        width: 22vw;
+        font-size: 1.2rem;
+    }
+
+    #under_title_viktig {
         font-size: 1.2rem;
     }
     
     #kruk_lista_4 {
+        width: 22vw;
         font-size: 1.2rem;
     }
 
