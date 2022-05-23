@@ -27,7 +27,7 @@ body h3 {
 #grid_wrapper {
     display: grid;
     grid-template-columns: minmax(105px, 1fr) minmax(105px, 1fr) minmax(105px, 1fr);
-    grid-template-rows: minmax(32px, 16vh) minmax(168px, 84vh) minmax(32px, 16vh) minmax(56px, 28vh) minmax(56px, 28vh) minmax(56px, 28vh); 
+    grid-template-rows: minmax(32px, 16vh) minmax(168px, 84vh) minmax(32px, 16vh) minmax(56px, 28vh) minmax(56px, 28vh) minmax(56px, 28vh) minmax(32px, 16vh); 
     grid-template-areas: 
     "he he he"
     "ar ar ar"
@@ -35,8 +35,9 @@ body h3 {
     "f1 f4 f4"
     "f1 f5 f3"
     "f2 f2 f3"
+    "fo fo fo"
     ;
-    height: 200vh;
+    height: 216vh;
     width: 100vw;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -167,9 +168,19 @@ body h3 {
 }
 
 #hem_article_2 {
+    display: flex;
     grid-area: a2;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(4, 54, 21);
     z-index: 1;
+}
+
+#hem_article_2 p {
+    font-size: 2rem;
+    font-weight: bolder;
+    display: flex;
+    color: beige;
 }
 
 .hem_bild_text {
@@ -318,6 +329,7 @@ body h3 {
 
 #grid_wrapper a:hover .hem_bild_text{
     font-size: 6vw;
+    transition: all 1s;
     color: rgb(255, 255, 255);
 }
 
@@ -443,6 +455,7 @@ body h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #kruk_lista_1 {
@@ -473,6 +486,7 @@ body h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #kruk_lista_3 {
@@ -662,7 +676,7 @@ body h3 {
 }
 
 .kaktus_titles {
-    margin-top: ;
+    margin-top: 0;
 }
 
 #kaktus_article_4 {
@@ -700,22 +714,22 @@ body h3 {
 #kaktus_article_5 {
     display: flex;
     grid-area: a5;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background-image: linear-gradient(rgb(132, 105, 31, 0.6),rgba(132, 105, 31, 0.6)),url('../img/kaktus_article_backgrund.png');
     background-attachment: fixed;
     background-size: cover;
     color: beige;
     flex-direction: column;
+    overflow: auto;
 }
 
 #kaktus_lista_3 {
     margin-bottom: auto;
     list-style: none;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
     font-size: 0.9rem;
+    width: 40vw;
 }
 
 #kaktus_lista_4 {
@@ -723,7 +737,6 @@ body h3 {
     list-style: none;
     margin-top: 20px;
     font-size: 0.9rem;
-    width: 40vw;
 }
 
 
@@ -837,15 +850,15 @@ body h3 {
     background-size: cover;
     color: beige;
     flex-direction: column;
+    overflow: auto;
 }
 
 #svamp_lista_1 {
     list-style: none;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
     font-size: 0.9rem;
     margin-bottom: 10px;
+    width: 40vw;
 }
 
 #svamp_lista_2 li {
@@ -854,8 +867,6 @@ body h3 {
 
 #svamp_lista_2 {
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 10px;
     list-style: none;
     font-size: 0.9rem;
 }
@@ -886,6 +897,7 @@ body h3 {
     background-image: linear-gradient(rgb(101, 71, 26, 0.5),rgba(101, 71, 26, 0.5)),url('../img/svamp_article_background.jpg');
     background-attachment: fixed;
     background-size: cover;
+    overflow: auto;
 }
 
 #svamp_article_bild_2 {
@@ -910,10 +922,9 @@ body h3 {
 #svamp_lista_3 {
     list-style: none;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
     font-size: 0.9rem;
     margin-bottom: 10px;
+    width: 40vw;
 }
 
 #svamp_lista_4 li {
@@ -922,8 +933,6 @@ body h3 {
 
 #svamp_lista_4 {
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
     list-style: none;
     font-size: 0.9rem;
 }
@@ -953,12 +962,14 @@ font-size: 0.7rem;
 #om_oss_grid_wrapper {
     display: grid;
     grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr);
-    grid-template-rows: 16vh 84vh 16vh 84vh 16vh;
+    grid-template-rows: 16vh 42vh 42vh 16vh 42vh 42vh 16vh;
     grid-template-areas: 
     "na na"
     "a1 a2"
+    "a1 a20"
     "di di"
     "a3 a4"
+    "a30 a4"
     "fo fo"
     ;
     height: 216vh;
@@ -1014,13 +1025,29 @@ font-size: 0.7rem;
 #om_oss_article_2 {
     display: flex;
     grid-area: a2;
-    justify-content: center;
+    justify-content: start;
+    padding-top: 1rem;
     align-items: center;
     background-image: linear-gradient(rgb(4, 54, 21, 0.5),rgba(4, 54, 21, 0.5)),url('../img/om_oss_article_background.png');
     background-attachment: fixed;
     background-size: cover;
     flex-direction: column;
     color: beige;
+    overflow: auto;
+}
+
+#om_oss_article_20 {
+    display: flex;
+    grid-area: a20;
+    justify-content: start;
+    padding-top: 1rem;
+    align-items: center;
+    background-image: linear-gradient(rgb(4, 54, 21, 0.5),rgba(4, 54, 21, 0.5)),url('../img/om_oss_article_background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    flex-direction: column;
+    color: beige;
+    overflow: auto;
 }
 
 #om_oss_article_2 h2 {
@@ -1030,10 +1057,9 @@ font-size: 0.7rem;
 #om_oss_lista_1 {
     margin-top: 10px;
     list-style: none;
-    margin-left: 20px;
-    margin-right: 20px;
     font-size: 0.9rem;
     margin-bottom: 20px;
+    width: 45vw;
 }
 
 #om_oss_lista_2 {
@@ -1051,13 +1077,29 @@ font-size: 0.7rem;
 #om_oss_article_3 {
     grid-area: a3;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    padding-top: 1rem;
     align-items: center;
     background-image: linear-gradient(rgb(4, 54, 21, 0.5),rgba(4, 54, 21, 0.5)),url('../img/om_oss_article_background.png');
     background-attachment: fixed;
     background-size: cover;
     color: beige;
     flex-direction: column;
+    overflow: auto;
+}
+
+#om_oss_article_30 {
+    grid-area: a30;
+    display: flex;
+    justify-content: start;
+    padding-top: 1rem;
+    align-items: center;
+    background-image: linear-gradient(rgb(4, 54, 21, 0.5),rgba(4, 54, 21, 0.5)),url('../img/om_oss_article_background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    color: beige;
+    flex-direction: column;
+    overflow: auto;
 }
 
 #om_oss_article_3 h2 {
@@ -1089,7 +1131,7 @@ font-size: 0.7rem;
     width: 50vw;
 }
 
-#om_oss_footer {
+#green_footer {
     grid-area: fo;
     background-color: rgb(4, 54, 21);
     background-attachment: fixed;
@@ -1101,10 +1143,10 @@ font-size: 0.7rem;
     justify-content: space-around;
 }
 
-.om_oss_footer_listor {
+.green_footer_listor {
     list-style: none;
     font-size: 0.7rem;
-    }
+}
 
 /*#endregion om_oss*/
 
@@ -1310,24 +1352,28 @@ font-size: 0.7rem;
         font-size: 1.4rem;
     }
 
-    #kaktus_article_50 {
+    #kaktus_article_50 h3 {
         font-size: 1.4rem;
     }
 
     #kaktus_lista_1 {
         font-size: 1.2rem;
+        width: 22vw;
     }
     
     #kaktus_lista_2 {
         font-size: 1.2rem;
+        width: 22vw;
     }
 
     #kaktus_lista_3 {
         font-size: 1.2rem;
+        width: 22vw;
     }
     
     #kaktus_lista_4 {
         font-size: 1.2rem;
+        width: 22vw;
     }
         
     .kaktus_footer_listor {
@@ -1338,7 +1384,7 @@ font-size: 0.7rem;
     #svamp_grid_wrapper {
         display: grid;
         grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
-        grid-template-rows: 16vh 84vh 16vh 84vh 16vh;
+        grid-template-rows: 16vh 84vh 16vh 116vh 16vh;
         grid-template-areas: 
         "na na na na "
         "a1 a1 a1 a1"
@@ -1348,6 +1394,17 @@ font-size: 0.7rem;
         ;
         height: 216vh;
         width: 100vw;
+    }
+
+    #svamp_article_2 {
+        display: flex;
+        justify-content: start;
+        padding-top: 10rem;
+    }
+    #svamp_article_5 {
+        display: flex;
+        justify-content: start;
+        padding-top: 10rem;
     }
     
     #svamp_article_bild_1 {
@@ -1364,6 +1421,7 @@ font-size: 0.7rem;
 
     #svamp_lista_1 {
         font-size: 1.2rem;
+        width: 22vw;
     }
 
     #svamp_lista_2 {
@@ -1372,6 +1430,7 @@ font-size: 0.7rem;
 
     #svamp_lista_3 {
         font-size: 1.2rem;
+        width: 22vw;
     }
 
     #svamp_lista_4 {
@@ -1394,10 +1453,10 @@ font-size: 0.7rem;
         grid-template-areas: 
         "na na"
         "a1 a1"
-        "a2 a2"
+        "a2 a20"
         "di di"
         "a4 a4"
-        "a3 a3"
+        "a3 a30"
         "fo fo"
         ;
         height: 216vh;
@@ -1427,7 +1486,7 @@ font-size: 0.7rem;
         width: 100vw;
     }
 
-    .om_oss_footer_listor {
+    .green_footer_listor {
         list-style: none;
         font-size: 1rem;
     }
