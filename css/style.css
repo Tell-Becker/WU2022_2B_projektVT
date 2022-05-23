@@ -769,12 +769,15 @@ body h3 {
     "na na"
     "a1 a1"
     "di di"
-    "a2 a3"
-    "a4 a5"
+    "a2 a2"
+    "a3 a3"
     "fo fo"
     ;
     height: 300vh;
     width: 100vw;
+
+    background-image: linear-gradient(rgb(101, 71, 26, 0.5),rgba(101, 71, 26, 0.5)),url('../img/svamp_article_background.jpg');
+    background-attachment: fixed;    
 }
 
 #svamp_nav {
@@ -845,11 +848,84 @@ body h3 {
     grid-area: a2;
     justify-content: center;
     align-items: center;
+    color: beige;
+    overflow: auto;
+    position: relative;
+}
+
+#svamp_article_2 figure{
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#svamp_article_2 img{
+    height: auto;
+    width: auto;
+}
+
+#svamp_article_2 section{
+    position: absolute;
+    z-index: 1;
     background-image: linear-gradient(rgb(101, 71, 26, 0.5),rgba(101, 71, 26, 0.5)),url('../img/svamp_article_background.jpg');
     background-attachment: fixed;
-    background-size: cover;
-    color: beige;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 1rem;
+    left: 0;
+    bottom: 0;
+    min-width: 70vw;
+    min-height: 64vh;
+    max-height: 60%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+#svamp_article_3 {
+    display: flex;
+    grid-area: a3;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    overflow: auto;
+    position: relative;
+}
+
+#svamp_article_3 figure{
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#svamp_article_3 img{
+    height: auto;
+    width: auto;
+}
+
+#svamp_article_3 section{
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(rgb(101, 71, 26, 0.5),rgba(101, 71, 26, 0.5)),url('../img/svamp_article_background.jpg');
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 1rem;
+    right: 0;
+    bottom: 0;
+    min-width: 70vw;
+    min-height: 64vh;
+    max-height: 60%;
+    max-width: 100%;
     overflow: auto;
 }
 
@@ -869,54 +945,6 @@ body h3 {
     margin-top: 20px;
     list-style: none;
     font-size: 0.9rem;
-}
-
-#svamp_article_3 {
-    display: flex;
-    grid-area: a3;
-    justify-content: space-around;
-    align-items: center;
-    background-image: linear-gradient(rgb(101, 71, 26, 0.5),rgba(101, 71, 26, 0.5)),url('../img/svamp_article_background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-
-#svamp_article_bild_1 {
-    height: 64vh;
-    width: 40vw;
-    object-fit: cover;
-    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
-}
-
-#svamp_article_4 {
-    display: flex;
-    grid-area: a4;
-    justify-content: space-around;
-    align-items: center;
-    background-image: linear-gradient(rgb(101, 71, 26, 0.5),rgba(101, 71, 26, 0.5)),url('../img/svamp_article_background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    overflow: auto;
-}
-
-#svamp_article_bild_2 {
-    height: 64vh;
-    width: 40vw;
-    object-fit: cover;
-    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
-}
-
-#svamp_article_5 {
-    display: flex;
-    grid-area: a5;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(rgb(101, 71, 26, 0.5),rgba(101, 71, 26, 0.5)),url('../img/svamp_article_background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    color: beige;
-    flex-direction: column;
 }
 
 #svamp_lista_3 {
@@ -939,9 +967,6 @@ body h3 {
 
 #svamp_footer {
     grid-area: fo;
-    background-image: linear-gradient(rgb(101, 71, 26, 0.5),rgba(101, 71, 26, 0.5)),url('../img/svamp_article_background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1383,36 +1408,28 @@ font-size: 0.7rem;
 
     #svamp_grid_wrapper {
         display: grid;
-        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
-        grid-template-rows: 16vh 84vh 16vh 116vh 16vh;
+        grid-template-columns: minmax(400px, 1fr) minmax(400px, 1fr);
+        grid-template-rows: 16vh 84vh 16vh 84vh 16vh;
         grid-template-areas: 
-        "na na na na "
-        "a1 a1 a1 a1"
-        "di di di di"
-        "a2 a3 a5 a4"
-        "fo fo fo fo"
+        "na na"
+        "a1 a1"
+        "di di"
+        "a2 a3"
+        "fo fo"
         ;
         height: 216vh;
         width: 100vw;
+
     }
 
-    #svamp_article_2 {
-        display: flex;
-        justify-content: start;
-        padding-top: 10rem;
-    }
-    #svamp_article_5 {
-        display: flex;
-        justify-content: start;
-        padding-top: 10rem;
-    }
-    
-    #svamp_article_bild_1 {
-        width: 20vw;
+    #svamp_article_2 section {
+        max-width: 70%;
+        min-width: 100px;
+        margin-left: 10px;
     }
 
-    #svamp_article_bild_2 {
-        width: 20vw;   
+    #svamp_article_2{
+        overflow: hidden;
     }
 
     #svamp_article_2 h3 {
@@ -1420,30 +1437,52 @@ font-size: 0.7rem;
     }
 
     #svamp_lista_1 {
+        width: 25vw;
         font-size: 1.2rem;
-        width: 22vw;
+        list-style: none;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-
+    
     #svamp_lista_2 {
         font-size: 1.2rem;
+        list-style: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    #svamp_lista_3 {
-        font-size: 1.2rem;
-        width: 22vw;
+
+    #svamp_article_3{
+        overflow: hidden;
     }
 
-    #svamp_lista_4 {
-        font-size: 1.2rem;
-    }
-
-    #svamp_article_5 h3 {
+    #svamp_article_3 h3 {
         font-size: 1.4rem;
     }
-        
-    .svamp_footer_listor {
+
+    #svamp_article_3 section {
+        max-width: 70%;
+        min-width: 100px;
+        margin-left: 10px;
+    }
+    
+    #svamp_lista_3 {
+        width: 25vw;
+        font-size: 1.2rem;
         list-style: none;
-        font-size: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #svamp_lista_4 {
+        font-size: 1.2rem;
+        list-style: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     #om_oss_grid_wrapper {
