@@ -1180,15 +1180,16 @@ font-size: 0.7rem;
     #grid_wrapper {
         display: grid;
         grid-template-columns: minmax(130px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr) minmax(130px, 1fr);
-        grid-template-rows: 16vh 84vh 16vh 42vh 42vh;
+        grid-template-rows: 16vh 84vh 16vh 42vh 42vh 16vh;
         grid-template-areas: 
         "he he he he he he"
         "ar ar ar ar ar ar"
         "a2 a2 a2 a2 a2 a2"
         "f1 f1 f5 f5 f2 f2"
         "f3 f3 f3 f4 f4 f4"
+        "fo fo fo fo fo fo"
         ;
-        height: 200vh;
+        height: 216vh;
         width: 100vw;
         overflow-y: hidden;
         overflow-x: hidden;
