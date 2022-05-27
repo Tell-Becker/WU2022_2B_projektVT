@@ -440,7 +440,7 @@ body h3 {
     background-size: cover;
     color: beige;
     justify-content: start;
-    padding-top: 8vh;
+    padding-top: 5vh;
     flex-direction: column;
     align-items: center;
     overflow: auto;
@@ -519,7 +519,7 @@ body h3 {
     background-size: cover;
     color: beige;
     justify-content: start;
-    padding-top: 8vh;
+    padding-top: 5vh;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
@@ -1041,7 +1041,8 @@ body h3 {
 
 #svamp_article_2 img{
     height: 100%;
-    width: auto;
+    width: 100%;
+    object-fit: cover;
 }
 
 #svamp_article_2 section{
@@ -1086,6 +1087,7 @@ body h3 {
 #svamp_article_3 img{
     height: 100%;
     width: auto;
+    object-fit: cover;
 }
 
 #svamp_article_3 section{
