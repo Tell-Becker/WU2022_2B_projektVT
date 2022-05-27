@@ -383,19 +383,6 @@ body h3 {
     background-color: rgb(41, 90, 17);
 }
 
-#kruk_lista {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100vw;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
 #kruk_lista a {
     text-decoration: none;
     color: beige;
@@ -452,19 +439,67 @@ body h3 {
     background-attachment: fixed;
     background-size: cover;
     color: beige;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    padding-top: 8vh;
     flex-direction: column;
-    overflow: hidden;
+    align-items: center;
+    overflow: auto;
+    position: relative;
 }
 
 #kruk_lista_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     list-style: none;
     width: 45vw;
     margin-top: 10px;
     font-size: 0.9rem;
     margin-bottom: 10px;
+    height: 40vh;
+    overflow: auto;
 }
+
+.storlek_li {
+    margin-left: 40px;
+    margin-right: 20px;
+    list-style-image: url('../img/ruler.png');
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.moln_li {
+    margin-left: 40px;
+    margin-right: 20px;
+    list-style-image: url('../img/cloud.png');
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.check_li {
+    margin-left: 40px;
+    margin-right: 20px;
+    list-style-image: url('../img/check.png');
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.kors_li {
+    margin-left: 40px;
+    margin-right: 20px;
+    list-style-image: url('../img/cross.png');
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.sol_li {
+    margin-left: 40px;
+    margin-right: 20px;
+    list-style-image: url('../img/sun.png');
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
 
 #kruk_lista_2 li {
     margin: 3px;
@@ -483,18 +518,26 @@ body h3 {
     background-attachment: fixed;
     background-size: cover;
     color: beige;
-    justify-content: center;
+    justify-content: start;
+    padding-top: 8vh;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    position: relative;
+    overflow: auto;
 }
 
 #kruk_lista_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     list-style: none;
+    width: 45vw;
     margin-top: 10px;
     font-size: 0.9rem;
     margin-bottom: 10px;
-    width: 45vw;
+    height: 40vh;
+    overflow: auto;
 }
 
 #under_title_viktig {
@@ -504,6 +547,16 @@ body h3 {
     font-weight: bold;
     font-family: sans-serif;
     margin-top: 15px;
+}
+
+#specifikationer {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 #kruk_lista_4 li {
@@ -535,7 +588,7 @@ body h3 {
 
 .kruk_li {
     list-style: circle;
-    margin: 20px;
+    margin: 15px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -567,6 +620,64 @@ body h3 {
     height: 30px;
     width: 30px;
     overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    bottom: 0;
+    margin: 10vh;
+}
+
+#button {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 3px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    border: 3px solid beige;
+    position: relative;
+    z-index: 1;
+    color: beige;
+}
+
+#button:hover {
+    cursor: pointer;
+    color: rgb(41, 90, 17);
+    font-weight: bold;
+    outline: 0;
+    border-style: none;
+    transition: 0.3s all ease-out;
+}
+
+#button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: beige;
+}
+
+#button:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+#storlek {
+    height: 50px;
+    filter: beige;
+}
+
+#storlek {
+    width: 30px;
+    height: 30px;
 }
 
 /*#endregion Krukvaxter*/
@@ -645,18 +756,42 @@ body h3 {
     justify-content: start;
     flex-direction: column;
     overflow: auto;
+    position: relative;
+}
+
+#kaktus_specifikationer {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 4px;
+    font-family: sans-serif;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+#kaktus_specifikationer_lista_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    list-style: none;
+    font-size: 0.9rem;
+    height: 30vh;
+    overflow: auto;
 }
 
 #kaktus_article_30 {
     display: flex;
     grid-area: a30;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     background-image: linear-gradient(rgb(132, 105, 31, 0.6),rgba(132, 105, 31, 0.6)),url('../img/kaktus_article_backgrund.png');
     background-attachment: fixed;
     background-size: cover;
     color: beige;
     flex-direction: column;
+    position: relative;
+    overflow: auto;
 }
 
 #kaktus_lista_1 {
@@ -665,18 +800,12 @@ body h3 {
     margin-top: 20px;
     font-size: 0.9rem;
     width: 40vw;
-
 }
 
 #kaktus_lista_2 {
-    margin-bottom: auto;
+    margin-top: 10px;
     list-style: none;
-    margin-top: 20px;
     font-size: 0.9rem;
-}
-
-.kaktus_titles {
-    margin-top: 0;
 }
 
 #kaktus_article_4 {
@@ -702,13 +831,25 @@ body h3 {
 #kaktus_article_50 {
     display: flex;
     grid-area: a50;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    background-image: linear-gradient(rgb(132, 105, 31,0.6),rgba(132, 105, 31, 0.6)),url('../img/kaktus_article_backgrund.png');
+    background-image: linear-gradient(rgb(132, 105, 31, 0.6),rgba(132, 105, 31, 0.6)),url('../img/kaktus_article_backgrund.png');
     background-attachment: fixed;
     background-size: cover;
     color: beige;
     flex-direction: column;
+    position: relative;
+    overflow: auto;
+}
+
+#kaktus_specikationer_lista_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    list-style: none;
+    font-size: 0.9rem;
+    height: 30vh;
+    overflow: auto;
 }
 
 #kaktus_article_5 {
@@ -727,7 +868,7 @@ body h3 {
 #kaktus_lista_3 {
     margin-bottom: auto;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 0.9rem;
     width: 40vw;
 }
@@ -735,7 +876,7 @@ body h3 {
 #kaktus_lista_4 {
     margin-bottom: auto;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 0.9rem;
 }
 
@@ -757,6 +898,53 @@ body h3 {
     font-size: 0.7rem;
 }
 
+.kaktus_container {
+    position: absolute;
+    bottom: 5vh;
+}
+
+#kaktus_button {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 3px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    border: 3px solid beige;
+    position: relative;
+    z-index: 1;
+    color: beige;
+}
+
+#kaktus_button:hover {
+    cursor: pointer;
+    color: rgb(132, 105, 31);
+    font-weight: bold;
+    outline: 0;
+    border-style: none;
+    transition: 0.3s all ease-out;
+}
+
+#kaktus_button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: beige;
+}
+
+#kaktus_button:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
 /*#endregion kaktus*/
 
 /*#region svampar*/
@@ -764,7 +952,7 @@ body h3 {
 #svamp_grid_wrapper {
     display: grid;
     grid-template-columns: minmax(160px, 1fr) minmax(160px, 1fr);
-    grid-template-rows: 16vh 84vh 16vh 84vh 84vh 16vh;
+    grid-template-rows: 16vh 84vh 16vh 100vh 100vh 16vh;
     grid-template-areas: 
     "na na"
     "a1 a1"
@@ -773,9 +961,8 @@ body h3 {
     "a3 a3"
     "fo fo"
     ;
-    height: 300vh;
+    height: 332vh;
     width: 100vw;
-
     background-image: linear-gradient(rgb(101, 71, 26, 0.5),rgba(101, 71, 26, 0.5)),url('../img/svamp_article_background.jpg');
     background-attachment: fixed;    
 }
@@ -796,19 +983,6 @@ body h3 {
 
 #svamp_meny {
     background-color: rgb(101, 71, 26);
-}
-
-#svamp_lista {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100vw;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 #svamp_lista a {
@@ -851,7 +1025,9 @@ body h3 {
     color: beige;
     overflow: auto;
     position: relative;
+    overflow: auto;
 }
+
 
 #svamp_article_2 figure{
     height: 90%;
@@ -860,10 +1036,11 @@ body h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.5));
 }
 
 #svamp_article_2 img{
-    height: auto;
+    height: 100%;
     width: auto;
 }
 
@@ -880,8 +1057,8 @@ body h3 {
     left: 0;
     bottom: 0;
     min-width: 70vw;
-    min-height: 64vh;
-    max-height: 60%;
+    min-height: 74vh;
+    max-height: 100%;
     max-width: 100%;
     overflow: auto;
 }
@@ -903,10 +1080,11 @@ body h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.5));
 }
 
 #svamp_article_3 img{
-    height: auto;
+    height: 100%;
     width: auto;
 }
 
@@ -923,18 +1101,22 @@ body h3 {
     right: 0;
     bottom: 0;
     min-width: 70vw;
-    min-height: 64vh;
-    max-height: 60%;
+    min-height: 74vh;
+    max-height: 100%;
     max-width: 100%;
     overflow: auto;
 }
 
 #svamp_lista_1 {
+    display: flex;
     list-style: none;
     margin-top: 10px;
     font-size: 0.9rem;
     margin-bottom: 10px;
-    width: 40vw;
+    width: 50vw;
+    height: 36vh;
+    flex-direction: column;
+    overflow: auto;
 }
 
 #svamp_lista_2 li {
@@ -942,17 +1124,21 @@ body h3 {
 }
 
 #svamp_lista_2 {
-    margin-top: 20px;
+    margin-top: 10px;
     list-style: none;
     font-size: 0.9rem;
 }
 
 #svamp_lista_3 {
+    display: flex;
     list-style: none;
     margin-top: 10px;
     font-size: 0.9rem;
     margin-bottom: 10px;
-    width: 40vw;
+    width: 50vw;
+    height: 36vh;
+    flex-direction: column;
+    overflow: auto;
 }
 
 #svamp_lista_4 li {
@@ -979,6 +1165,62 @@ list-style: none;
 font-size: 0.7rem;
 }
 
+#svamp_specifikationer {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 4px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.svamp_container {
+    position: absolute;
+    bottom: 5vh;
+}
+
+#svamp_button {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 3px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    border: 3px solid beige;
+    position: relative;
+    z-index: 1;
+    color: beige;
+}
+
+#svamp_button:hover {
+    cursor: pointer;
+    color: rgb(101, 71, 26);
+    font-weight: bold;
+    outline: 0;
+    border-style: none;
+    transition: 0.3s all ease-out;
+}
+
+#svamp_button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: beige;
+}
+
+#svamp_button:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
 
 /*#endregion svampar*/
 
@@ -1271,44 +1513,91 @@ font-size: 0.7rem;
         overflow-x: hidden;
     }
 
+    .storlek_li {
+        font-size: 1.2rem;
+        margin-left: 40px;
+        margin-right: 20px;
+        list-style-image: url('../img/ruler.png');
+        padding-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .moln_li {
+        font-size: 1.2rem;
+        margin-left: 40px;
+        margin-right: 20px;
+        list-style-image: url('../img/cloud.png');
+        padding-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .check_li {
+        font-size: 1.2rem;
+        margin-left: 40px;
+        margin-right: 20px;
+        list-style-image: url('../img/check.png');
+        padding-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .kors_li {
+        font-size: 1.2rem;
+        margin-left: 40px;
+        margin-right: 20px;
+        list-style-image: url('../img/cross.png');
+        padding-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .sol_li {
+        font-size: 1.2rem;
+        margin-left: 40px;
+        margin-right: 20px;
+        list-style-image: url('../img/sun.png');
+        padding-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    
+
     #kruk_article_bild_1 {
         width: 20vw;
+        height: 80vh;
     }
 
     #kruk_article_bild_2 {
         width: 20vw;   
+        height: 80vh;
     }
 
     #kruk_article_3 h3 {
         font-size: 1.4rem;
+        padding-top: 0.5rem;
     }
 
     #kruk_article_3 {
-        display: flex;
-        justify-content: start;
-        padding-top: 10rem;
+        padding-top: 4rem;
     }
     #kruk_article_4 {
-        display: flex;
-        justify-content: start;
-        padding-top: 10rem;
+        padding-top: 4rem; 
     }
 
     #kruk_lista_1 {
+        height: 55vh;
         width: 22vw;
         font-size: 1.2rem;
     }
     
     #kruk_lista_2 {
-        width: 22vw;
         font-size: 1.2rem;
     }
 
     #kruk_article_4 h3 {
         font-size: 1.4rem;
+        padding-top: 0.5rem;
     }
 
     #kruk_lista_3 {
+        height: 55vh;
         width: 22vw;
         font-size: 1.2rem;
     }
@@ -1316,10 +1605,17 @@ font-size: 0.7rem;
     #under_title_viktig {
         font-size: 1.2rem;
     }
+
+    #specifikationer {
+        font-size: 1.2rem;
+    }
     
     #kruk_lista_4 {
-        width: 22vw;
         font-size: 1.2rem;
+    }
+
+    .container {
+        margin: 18vh;
     }
 
     .kruk_footer_listor {
@@ -1342,7 +1638,7 @@ font-size: 0.7rem;
     #kaktus_grid_wrapper {
         display: grid;
         grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
-        grid-template-rows: 16vh 84vh 16vh 42vh 50vh 16vh;
+        grid-template-rows: 16vh 84vh 16vh 42vh 64vh 16vh;
         grid-template-areas: 
         "na na na na "
         "a1 a1 a1 a1"
@@ -1351,7 +1647,7 @@ font-size: 0.7rem;
         "a3 a30 a5 a50"
         "fo fo fo fo"
         ;
-        height: 224vh;
+        height: 238vh;
         width: 100vw;
         overflow-x: hidden;
         overflow-y: hidden;
@@ -1389,7 +1685,6 @@ font-size: 0.7rem;
     
     #kaktus_lista_2 {
         font-size: 1.2rem;
-        width: 22vw;
     }
 
     #kaktus_lista_3 {
@@ -1399,12 +1694,21 @@ font-size: 0.7rem;
     
     #kaktus_lista_4 {
         font-size: 1.2rem;
-        width: 22vw;
     }
         
     .kaktus_footer_listor {
         list-style: none;
         font-size: 1rem;
+    }
+
+    #kaktus_specifikationer {
+        display: flex;
+        justify-content: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-bottom: 10px;
+        margin-top: 3px;
     }
 
     #svamp_grid_wrapper {
@@ -1424,9 +1728,19 @@ font-size: 0.7rem;
     }
 
     #svamp_article_2 section {
-        max-width: 70%;
+        max-width: 100%;
         min-width: 100px;
         margin-left: 10px;
+    }
+
+    #svamp_article_2 figure {
+        height: 90%;
+        width: 90%;
+    }
+
+    #svamp_article_3 figure {
+        height: 90%;
+        width: 90%;
     }
 
     #svamp_article_2{
@@ -1464,7 +1778,7 @@ font-size: 0.7rem;
     }
 
     #svamp_article_3 section {
-        max-width: 70%;
+        max-width: 100%;
         min-width: 100px;
         margin-left: 10px;
     }
@@ -1484,6 +1798,16 @@ font-size: 0.7rem;
         list-style: none;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    #svamp_specifikationer {
+        display: flex;
+        justify-content: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        margin-bottom: 10px;
+        margin-top: 3px;
     }
 
     #om_oss_grid_wrapper {
